@@ -1,5 +1,10 @@
 name: CI
-on: [push]
+
+on:
+  push:
+    branches: [main, prod]
+  pull_request:
+    branches: [main, prod]
 
 jobs:
   build:
@@ -10,7 +15,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node: [18.x, 20.x]
+        node: [20.x, 22.x]
         os: [ubuntu-latest]
 
     steps:
