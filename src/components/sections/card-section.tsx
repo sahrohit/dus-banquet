@@ -1,52 +1,35 @@
-interface CardProps {
-  image: string;
-  alt?: string;
-  heading: string;
-  location: string;
-}
-
-const Card = ({ image, alt, heading, location }: CardProps) => (
-  <div>
-    <figure className="relative mb-5 h-[500px] w-[300px] before:absolute before:inset-3 before:z-[2] before:border-[0.5px] before:border-white/50 ">
-      <img src={image} alt={alt} className="size-full object-cover" />
-    </figure>
-    <h3 className="tracing-[0.85px] pb-3 text-center text-2xl leading-9">
-      {heading}
-    </h3>
-    <p className="text-center uppercase leading-3 tracking-widest">
-      {location}
-    </p>
-  </div>
-);
-
-export { Card };
+import Card from "../cards/location";
 
 const CardSection = () => (
   <section className="bg-[#cfc7b5] text-black">
     <div className="container py-20">
-      <h2 className="pb-10 text-2xl uppercase tracking-widest">
+      <h2 className="pb-10 text-3xl uppercase tracking-widest">
         our portfolio of historic wedding & special event venues
       </h2>
       <div className="flex flex-row flex-wrap justify-center gap-10">
         <Card
-          image="https://fetewell.com/wp-content/uploads/2022/10/IMG_1264-3.jpg"
+          image="/assets/haven-street-ballroom.jpg"
           heading="Haven Street Ballroom"
           location="baltimore"
+          alt="Haven Street Ballroom"
         />
         <Card
-          image="https://fetewell.com/wp-content/uploads/2022/09/IMG_4176.jpg"
+          image="/assets/main-street-ballroom.jpg"
           heading="Main Street Ballroom"
           location="ellicott city"
+          alt="Main Street Ballroom"
         />
         <Card
-          image="https://fetewell.com/wp-content/uploads/2024/01/7FAA27CF-CD4D-4856-855B-B965E78F43C0.jpg"
+          image="/assets/citizens-ballroom.jpg"
           heading="Citizens Ballroom"
           location="frederick"
+          alt="Citizens Ballroom"
         />
         <Card
-          image="https://fetewell.com/wp-content/uploads/2023/12/SarahRyanSP-40.jpg"
+          image="/assets/savannah-bottle-works.jpg"
           heading="Savannah Bottle Works"
           location="savannah"
+          alt="Savannah Bottle Works"
         />
       </div>
     </div>
