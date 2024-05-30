@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 
 import type { Metadata, Viewport } from "next";
-import { Quattrocento } from "next/font/google";
+import { Noto_Serif } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
@@ -10,9 +10,11 @@ import { siteConfig } from "@/config/site";
 import { locales } from "@/lib/navigation";
 import { cn } from "@/lib/utils";
 import Analytics from "@/components/analytics";
+import Footer from "@/components/sections/footer";
+import Navbar from "@/components/sections/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 
-const quattrocento = Quattrocento({
+const noto = Noto_Serif({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
@@ -85,19 +87,18 @@ const RootLayout = async ({
     <html lang={locale} suppressHydrationWarning>
       <head />
       <body
-        className={cn(
-          "min-h-screen bg-background antialiased",
-          quattrocento.className,
-        )}
+        className={cn("min-h-screen bg-background antialiased", noto.className)}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="light"
             enableSystem
             disableTransitionOnChange
           >
+            <Navbar />
             {children}
+            <Footer />
             <Analytics />
           </ThemeProvider>
         </NextIntlClientProvider>
