@@ -1,8 +1,13 @@
 import ThreeImageSection from "@/components/sections/three-image-section";
-
+import OurValuesSection from "@/components/sections/our-values-section";
+import CardSection from "@/components/sections/card-section";
+        
 const Home = () => (
-  // <div className="grid h-screen w-full place-items-center">Shubharambha</div>
-  <ThreeImageSection />
+  <>
+    <OurValuesSection />
+    <CardSection />
+    <ThreeImageSection />
+  </>
 );
 
 export default Home;
