@@ -10,6 +10,9 @@ import { siteConfig } from "@/config/site";
 import { locales } from "@/lib/navigation";
 import { cn } from "@/lib/utils";
 import Analytics from "@/components/analytics";
+import Footer from "@/components/sections/footer";
+import Navbar from "@/components/sections/navbar";
+import NavMenu from "@/components/sections/navbar/nav-menu";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const quattrocento = Quattrocento({
@@ -97,7 +100,9 @@ const RootLayout = async ({
             enableSystem
             disableTransitionOnChange
           >
+            <Navbar />
             {children}
+            <Footer />
             <Analytics />
           </ThemeProvider>
         </NextIntlClientProvider>
