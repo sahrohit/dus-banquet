@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import Logo from "@/components/shared/logo";
 
 const Footer = () => (
-  <footer className="container">
+  <footer className="container my-12">
     <div className="grid gap-12 py-4 md:grid-cols-[1.5fr_0.5fr_0.5fr]">
       <div className="not-prose flex flex-col gap-6">
         <Link href="/">

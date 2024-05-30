@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const OurValuesSection = () => (
-  <section className="bg-[#edebe5] py-20 text-black">
+  <section className="py-20">
     <div className="container flex flex-row flex-wrap justify-center gap-6 sm:gap-10 md:gap-16 lg:gap-24">
       <div className="flex max-w-[245px] flex-col items-center gap-5 text-center [&_h2]:text-6xl [&_h2]:font-normal [&_h2]:leading-none [&_h2]:tracking-[-2.6px] [&_h3]:text-sm [&_h3]:uppercase [&_h3]:leading-normal [&_h3]:tracking-[2.65px] [&p]:w-full [&p]:leading-normal">
         <h2>Our Values</h2>
