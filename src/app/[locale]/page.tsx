@@ -1,8 +1,9 @@
+import OurValuesSection from "@/components/sections/our-values-section";
 import CardSection from "@/components/sections/card-section";
-
+        
 const Home = () => (
   <>
-    {/* <div className="grid h-screen w-full place-items-center">Shubharambha</div> */}
+    <OurValuesSection />
     <CardSection />
   </>
 );
