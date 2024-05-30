@@ -4,10 +4,10 @@ interface CardProps {
   image: string;
   alt: string;
   heading: string;
-  location: string;
+  subheading: string;
 }
 
-const Card = ({ image, alt, heading, location }: CardProps) => (
+const EventCard = ({ image, alt, heading, subheading }: CardProps) => (
   <div>
     <figure className="relative mb-5 h-[500px] w-[300px] before:absolute before:inset-3 before:z-[2] before:border-[0.5px] before:border-white/50 ">
       <Image
@@ -22,9 +22,9 @@ const Card = ({ image, alt, heading, location }: CardProps) => (
       {heading}
     </h3>
     <p className="text-center uppercase leading-3 tracking-widest">
-      {location}
+      {subheading}
     </p>
   </div>
 );
 
-export default Card;
+export default EventCard;
