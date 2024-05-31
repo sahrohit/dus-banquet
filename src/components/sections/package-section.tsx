@@ -14,7 +14,7 @@ const PricingCards = () => {
     <section className="container flex flex-col items-center py-16 text-center">
       <div className="mx-auto max-w-screen-sm text-center">
         <h2 className=" text-3xl uppercase leading-snug tracking-[6.5px]">
-          Pricing
+          Packages
         </h2>
         <Separator className="mx-auto my-4 max-w-sm bg-slate-500" />
         <p className="pb-4">Start at full speed !</p>
