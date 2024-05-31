@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { LuFacebook, LuGithub, LuTwitter } from "react-icons/lu";
 
 import { NAV_LINKS } from "@/config/nav-links";
 import { siteConfig } from "@/config/site";
-import { Button } from "@/components/ui/button";
+import { SOCIALS } from "@/config/social";
+import { buttonVariants } from "@/components/ui/button";
 import Logo from "@/components/shared/logo";
 
 const Footer = () => (
@@ -32,19 +32,23 @@ const Footer = () => (
     </div>
     <div className="not-prose flex flex-col justify-between gap-6 border-t py-4 md:flex-row md:items-center md:gap-2">
       <div className="flex gap-2">
-        <Button variant="outline" size="icon">
-          <LuGithub className="text-xl" />
-        </Button>
-        <Button variant="outline" size="icon">
-          <LuTwitter className="text-xl" />
-        </Button>
-        <Button variant="outline" size="icon">
-          <LuFacebook className="text-xl" />
-        </Button>
+        {SOCIALS.map((social) => {
+          const Icon = social.icon;
+          return (
+            <Link
+              key={social.label}
+              className={buttonVariants({ variant: "outline", size: "icon" })}
+              href={social.href}
+              target="_blank"
+            >
+              <Icon className="text-xl" />
+            </Link>
+          );
+        })}
       </div>
       <p className="text-muted-foreground">
-        © <a href="https://github.com/brijr/components">Dus Banquets</a>. All
-        rights reserved. {new Date().getFullYear()}.
+        © <a href="https://github.com/sahrohit/dus-banquet">Dus Reception</a>.
+        All rights reserved. {new Date().getFullYear()}.
       </p>
     </div>
   </footer>

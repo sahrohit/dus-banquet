@@ -3,26 +3,26 @@
 export const LOCATION = [
   {
     image: "/assets/haven-street-ballroom.jpg",
-    heading: "Haven Street Ballroom",
-    subHeading: "baltimore",
+    heading: "Weddings",
+    subHeading: "Lorem ipsum",
     alt: "Haven Street Ballroom",
   },
   {
     image: "/assets/main-street-ballroom.jpg",
-    heading: "Main Street Ballroom",
-    subHeading: "ellicott city",
+    heading: "Receptions",
+    subHeading: "Lorem ipsum",
     alt: "Main Street Ballroom",
   },
   {
     image: "/assets/citizens-ballroom.jpg",
-    heading: "Citizens Ballroom",
-    subHeading: "frederick",
+    heading: "Birthdays",
+    subHeading: "Lorem ipsum",
     alt: "Citizens Ballroom",
   },
   {
     image: "/assets/savannah-bottle-works.jpg",
-    heading: "Savannah Bottle Works",
-    subHeading: "savannah",
+    heading: "Anniversary",
+    subHeading: "Lorem ipsum",
     alt: "Savannah Bottle Works",
   },
 ];

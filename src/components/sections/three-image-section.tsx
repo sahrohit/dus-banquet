@@ -1,11 +1,14 @@
 import Image from "next/image";
 
+import { Separator } from "../ui/separator";
+
 const ThreeImageSection = () => (
-  <section className="container py-16 lg:py-32">
+  <section className="container py-8">
     <div className="lg:gap-22 flex flex-col items-center gap-8 lg:flex-row">
       <div className="flex w-full items-center justify-center lg:w-1/2">
-        <figure className="[&_img]:size-full">
+        <figure className="md:translate-x-12 [&_img]:size-full ">
           <Image
+            className="max-h-96"
             src="/assets/collage-img-1.jpg"
             alt="Couple and dog"
             width="277"
@@ -14,8 +17,9 @@ const ThreeImageSection = () => (
           />
         </figure>
         <div className="flex flex-col items-end">
-          <figure className="[&_img]:size-full">
+          <figure>
             <Image
+              className="size-full max-h-96"
               src="/assets/collage-img-2.jpg"
               alt="Woman and cat"
               width="218"
@@ -23,8 +27,9 @@ const ThreeImageSection = () => (
               loading="lazy"
             />
           </figure>
-          <figure className="[&_img]:size-full">
+          <figure className="-md:translate-y-12 md:translate-x-12">
             <Image
+              className="size-full max-h-96"
               src="/assets/collage-img-3.jpg"
               alt="Woman,child and dog"
               width="250"
@@ -34,8 +39,11 @@ const ThreeImageSection = () => (
           </figure>
         </div>
       </div>
-      <div className="flex w-full max-w-[560px] flex-col justify-center p-8 lg:w-1/2 [&_h2]:mb-8 [&_p]:mb-8">
-        <h2>A COLLECTION OF HISTORIC WEDDING AND SPECIAL EVENT VENUES</h2>
+      <div className="flex w-full max-w-[560px] flex-col justify-center p-8 lg:w-1/2 [&_p]:mb-8">
+        <h2 className="text-center text-3xl uppercase tracking-widest md:text-start">
+          A COLLECTION OF HISTORIC WEDDING AND SPECIAL EVENT VENUES
+        </h2>
+        <Separator className="my-4 max-w-sm bg-slate-500" />
         <p>
           Fêtewell (‘fet-‘wel) translates to “celebrate fully.” That’s the
           spirit behind our portfolio of special event venues. Fêtewell venues

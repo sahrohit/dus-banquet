@@ -35,7 +35,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-import { Card, CardContent, CardHeader } from "../ui/card";
+import useContactModal from "../store/use-contact-modal";
 
 const formSchema = z.object({
   name: z.string().min(1, {
@@ -57,6 +57,7 @@ const formSchema = z.object({
 });
 
 const ContactForm = () => {
+  const { onClose } = useContactModal();
   const [isPending, startTransaction] = useTransition();
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -87,6 +88,7 @@ const ContactForm = () => {
         toast.success("We'll contact you soon.", {
           id: "contact-form",
         });
+        onClose();
       } else {
         toast.error("Error occured. Please Try again.", {
           id: "contact-form",
