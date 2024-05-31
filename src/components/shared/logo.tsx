@@ -5,7 +5,7 @@ import { siteConfig } from "@/config/site";
 
 const Logo = () => (
   <Link href="/">
-    <Image src="/logo.png" alt={siteConfig.name} width={160} height={160} />
+    <Image src="/logo2.png" alt={siteConfig.name} width={160} height={160} />
   </Link>
 );
 

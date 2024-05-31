@@ -18,9 +18,13 @@ const HeroSection = () => (
   >
     <CarouselContent>
       {CAROUSEL.map(({ image }) => (
-        <CarouselItem key={image} className="mx-auto md:basis-2/3">
-          <figure className="h-[80vh] w-full px-16">
-            <img src={image} alt="value-img-1" className="object-center" />
+        <CarouselItem key={image} className="mx-auto basis-2/3">
+          <figure className=" px-16">
+            <img
+              src={image}
+              alt="value-img-1"
+              className="object-fit object-center"
+            />
           </figure>
         </CarouselItem>
       ))}

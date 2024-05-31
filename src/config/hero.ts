@@ -2,21 +2,18 @@
 
 export const CAROUSEL = [
   {
-    image: "/assets/value-img-1.jpeg",
+    image: "/assets/hero/1.jpg",
   },
   {
-    image: "/assets/value-img-2.jpeg",
+    image: "/assets/hero/2.jpg",
   },
   {
-    image: "/assets/value-img-3.jpeg",
+    image: "/assets/hero/3.jpg",
   },
   {
-    image: "/assets/value-img-4.jpeg",
+    image: "/assets/hero/4.jpg",
   },
   {
-    image: "/assets/value-img-5.jpeg",
-  },
-  {
-    image: "/assets/value-img-6.jpeg",
+    image: "/assets/hero/5.jpg",
   },
 ];
