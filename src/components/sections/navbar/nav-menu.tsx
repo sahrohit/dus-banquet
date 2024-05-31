@@ -40,8 +40,8 @@ const ListItem = React.forwardRef<
 ));
 ListItem.displayName = "ListItem";
 
-const NavMenu = () => (
-  <NavigationMenu>
+const NavMenu = ({ className }: { className?: string }) => (
+  <NavigationMenu className={className}>
     <NavigationMenuList>
       <NavigationMenuItem>
         <NavigationMenuTrigger className="text-lg">

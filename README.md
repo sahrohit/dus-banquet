@@ -1,16 +1,16 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/sahrohit/dus-banquet" style="font-size:60px;">
+  <a href="https://github.com/sahrohit/dus-reception" style="font-size:60px;">
    <img alt="Brand Logo" src="public/logo.avif"
    height="150"
    style="border-radius:50%" />
   </a>
 
-  <h3 align="center">Dus Banquet</h3>
+  <h3 align="center">Dus reception</h3>
 
   <p align="center">
-Banquet for you parties.
+reception for you parties.
     <br />
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
@@ -21,7 +21,7 @@ Banquet for you parties.
 
 ## About The Project
 
-Dus Banquet is the static website for Dus chain of banquets. The main goal of this project is to make name for Dus banquet on the internet as well as first page of google search.
+Dus reception is the static website for Dus chain of banquets. The main goal of this project is to make name for Dus reception on the internet as well as first page of google search.
 
 <!-- GETTING STARTED -->
 
@@ -33,7 +33,7 @@ To get a local copy up and running follow these simple example steps:
 
 1. Clone the repo
    ```sh copy
-   git clone https://github.com/sahrohit/dus-banquet.git
+   git clone https://github.com/sahrohit/dus-reception.git
    ```
 2. Install the project dependencies
 

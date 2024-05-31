@@ -3,11 +3,11 @@ import Image from "next/image";
 const OurValuesSection = () => (
   <section className="py-20">
     <div className="container flex flex-row flex-wrap justify-center gap-6 sm:gap-10 md:gap-16 lg:gap-24">
-      <div className="flex max-w-[245px] flex-col items-center gap-5 text-center [&_h2]:text-6xl [&_h2]:font-normal [&_h2]:leading-none [&_h2]:tracking-[-2.6px] [&_h3]:text-sm [&_h3]:uppercase [&_h3]:leading-normal [&_h3]:tracking-[2.65px] [&p]:w-full [&p]:leading-normal">
-        <h2>Our Values</h2>
+      <div className="flex max-w-[245px] flex-col items-center gap-5 text-center [&_h2]:text-7xl [&_h2]:font-light [&_h2]:leading-none [&_h2]:tracking-[-2.6px] [&_h3]:uppercase [&_h3]:leading-normal [&_h3]:tracking-[2.65px] [&p]:w-full [&p]:leading-normal">
+        <h2 className="md:translate-x-16 md:translate-y-10">Our Values</h2>
         <figure className="max-h-[325px]">
           <Image
-            src="/assets/value-img-1.jpeg"
+            src="/assets/value-img-3.jpeg"
             alt="value-img-1"
             className="size-full object-cover"
             width={768}
@@ -20,7 +20,7 @@ const OurValuesSection = () => (
           having the freedom to choose the perfect menu for your celebration
         </p>
       </div>
-      <div className="flex max-w-[415px] flex-col items-center gap-5 text-center [&_h3]:text-sm [&_h3]:uppercase [&_h3]:leading-normal [&_h3]:tracking-[2.65px] [&p]:w-full [&p]:leading-normal">
+      <div className="flex max-w-[415px] flex-col items-center gap-5 text-center [&_h3]:uppercase [&_h3]:leading-normal [&_h3]:tracking-[2.65px] [&p]:w-full [&p]:leading-normal">
         <figure className="max-h-[625px]">
           <Image
             src="/assets/value-img-2.jpeg"
@@ -39,7 +39,7 @@ const OurValuesSection = () => (
         </p>
       </div>
       <div className="flex max-w-[345px] flex-col gap-12">
-        <div className="flex flex-col items-center gap-5 text-center [&_h3]:text-sm [&_h3]:uppercase [&_h3]:leading-normal [&_h3]:tracking-[2.65px] [&p]:w-full [&p]:leading-normal">
+        <div className="flex flex-col items-center gap-5 text-center [&_h3]:uppercase [&_h3]:leading-normal [&_h3]:tracking-[2.65px] [&p]:w-full [&p]:leading-normal">
           <figure>
             <Image
               src="/assets/value-img-6.jpeg"
@@ -52,10 +52,10 @@ const OurValuesSection = () => (
           <h3>WE WELCOME ALL</h3>
           <p>We enthusiastically welcome all couples.</p>
         </div>
-        <div className="flex flex-col items-center gap-5 text-center [&_h3]:text-sm [&_h3]:uppercase [&_h3]:leading-normal [&_h3]:tracking-[2.65px] [&p]:w-full [&p]:leading-normal">
+        <div className="flex flex-col items-center gap-5 text-center [&_h3]:uppercase [&_h3]:leading-normal [&_h3]:tracking-[2.65px] [&p]:w-full [&p]:leading-normal">
           <figure className="w-full [&_img]:max-h-[355px]">
             <Image
-              src="/assets/value-img-3.jpeg"
+              src="/assets/value-img-1.jpeg"
               alt="value-img-3"
               className="size-full object-cover"
               width={683}
