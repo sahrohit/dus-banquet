@@ -45,7 +45,7 @@ const Cuisine = () => (
       </div>
 
       <div className="flex flex-col lg:relative">
-        <figure className="max-h-[600px] max-w-[400px]">
+        <figure>
           <Image
             src="/assets/cuisine-img-2.jpg"
             alt="cuisine-img-2"
@@ -70,7 +70,7 @@ const Cuisine = () => (
       </div>
 
       <div className="flex flex-row flex-wrap items-center justify-center gap-8 py-20 lg:gap-24">
-        <figure>
+        <figure className="max-h-[600px] max-w-[400px]">
           <Image
             src="/assets/cuisine-img-3.jpg"
             alt="cuisine-img-3"
