@@ -9,6 +9,8 @@ on:
 jobs:
   test:
     name: Playwright Smoke Test
+    env:
+      SKIP_ENV_VALIDATION: 1
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
