@@ -33,7 +33,7 @@ const Cuisine = () => (
             your event will look (and taste) exactly how you envision.
           </p>
         </div>
-        <figure>
+        <figure className="max-h-[600px] max-w-[400px]">
           <Image
             src="/assets/cuisine-img-1.jpg"
             alt="cuisine-img-1"
@@ -45,7 +45,7 @@ const Cuisine = () => (
       </div>
 
       <div className="flex flex-col lg:relative">
-        <figure>
+        <figure className="max-h-[600px] max-w-[400px]">
           <Image
             src="/assets/cuisine-img-2.jpg"
             alt="cuisine-img-2"
