@@ -57,6 +57,11 @@ export const NAV_LINKS: {
         href: "/about/photographer",
         description: "Capturing timeless moments with artistic precision.",
       },
+      {
+        label: "Cuisine",
+        href: "/about/cuisine",
+        description: "Capturing timeless moments with artistic precision.",
+      },
     ],
   },
 ];

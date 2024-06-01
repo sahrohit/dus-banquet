@@ -54,7 +54,9 @@ const PricingCards = () => {
               </ul>
 
               {index === 1 && (
-                <Button onClick={() => onOpen()}>Contact Us</Button>
+                <Button onClick={() => onOpen()} className="hidden md:flex">
+                  Contact Us
+                </Button>
               )}
             </div>
           </div>

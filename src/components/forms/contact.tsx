@@ -200,7 +200,7 @@ const ContactForm = () => {
               control={form.control}
               name="contact_number"
               render={({ field }) => (
-                <FormItem className="col-span-2">
+                <FormItem className="md:col-span-2">
                   <FormLabel>Contact Number</FormLabel>
                   <FormControl>
                     <Input

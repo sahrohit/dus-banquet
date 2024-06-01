@@ -4,7 +4,7 @@ import { Card, CardContent } from "../ui/card";
 const Contact = () => (
   <section
     id="contact"
-    className="container my-8 flex flex-col justify-between gap-16 md:mx-24 md:my-16 md:flex-row"
+    className="container mb-8 flex flex-col justify-between gap-16 md:my-16 md:flex-row"
   >
     {/* <div className="flex flex-col gap-4 text-center md:text-left">
       <div className="flex flex-col gap-2">
