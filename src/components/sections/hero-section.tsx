@@ -23,7 +23,7 @@ const HeroSection = () => (
         delay: 4000,
       }),
     ]}
-    className="mx-auto w-[calc(100%)]"
+    className="mx-auto max-w-[90vw]"
   >
     <CarouselContent>
       {CAROUSEL.map(({ image }) => (
