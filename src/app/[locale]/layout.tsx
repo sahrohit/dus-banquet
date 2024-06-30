@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 
 import type { Metadata, Viewport } from "next";
-import { Noto_Serif } from "next/font/google";
+import { Playfair_Display } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
@@ -11,14 +11,12 @@ import { locales } from "@/lib/navigation";
 import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/sonner";
 import Analytics from "@/components/analytics";
-import Footer from "@/components/sections/footer";
-import Navbar from "@/components/sections/navbar";
 import ModalProvider from "@/components/shared/modal-provider";
 import { ThemeProvider } from "@/components/theme-provider";
 
-const noto = Noto_Serif({
+const noto = Playfair_Display({
   subsets: ["latin"],
-  weight: ["300", "400", "700"],
+  weight: ["400"],
 });
 
 interface RootLayoutProps {
@@ -98,9 +96,9 @@ const RootLayout = async ({
             enableSystem
             disableTransitionOnChange
           >
-            <Navbar />
+            {/* <Navbar /> */}
             {children}
-            <Footer />
+            {/* <Footer /> */}
             <Toaster richColors />
             <ModalProvider />
             <Analytics />

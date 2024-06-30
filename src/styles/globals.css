@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 45, 18%, 91%;
+    --background: 0, 0%, 100%;
     --foreground: 0 0% 3.9%;
 
     --card: 42, 21%, 76%;
@@ -13,7 +13,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
 
-    --primary: 0 0% 9%;
+    --primary: 41, 54%, 54%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 0 0% 96.1%;
@@ -72,6 +72,96 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply m-0
+    h-full
+    w-full
+    min-w-[320px]
+    overflow-x-hidden
+		bg-background
+		text-[1rem]
+		font-normal
+		leading-normal
+		text-foreground
+		antialiased
+		lg:leading-[1.67]
+		xl:text-[1.125rem];
+  }
+
+  picture {
+    @apply mb-4
+		block;
+  }
+
+  img {
+    @apply h-auto
+		w-auto
+		max-w-full
+		align-middle;
+  }
+
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6 {
+    @apply mb-2
+		font-bold
+		capitalize
+		leading-tight
+		2xl:mb-4;
+  }
+
+  h1,
+  .h1 {
+    @apply /*54px*/
+		text-[2.25rem]
+		lg:text-[2.625rem]
+		2xl:text-[3.375rem];
+  }
+
+  h2,
+  .h2 {
+    @apply /*48px*/ text-[1.75rem]
+		lg:text-[2.25rem]
+		2xl:text-[3rem];
+  }
+
+  h3,
+  .h3 {
+    @apply /*30px*/ text-[1.375rem]
+		lg:text-[1.625rem]
+		2xl:text-[1.875rem];
+  }
+
+  h4,
+  .h4 {
+    @apply /*24px*/ text-[1.25rem]
+		lg:text-[1.375rem]
+		2xl:text-[1.5rem];
+  }
+
+  h5,
+  .h5 {
+    @apply /*20px*/ text-[1rem]
+		lg:text-[1.125rem]
+		2xl:text-[1.25rem];
+  }
+
+  h6,
+  .h6 {
+    @apply /*18px*/ text-sm
+		2xl:text-[1.125rem];
+  }
+
+  p {
+    @apply mb-2
+		2xl:mb-4;
   }
 }
